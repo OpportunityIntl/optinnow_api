@@ -1,8 +1,8 @@
-require 'commands/donor'
-require 'commands/fundraiser'
-require 'commands/donation'
-require 'response/wrapper'
-require 'response/object'
+require 'optinnow_api/commands/donor'
+require 'optinnow_api/commands/fundraiser'
+require 'optinnow_api/commands/donation'
+require 'optinnow_api/response/wrapper'
+require 'optinnow_api/response/object'
 
 module OptINnow
   class Client
