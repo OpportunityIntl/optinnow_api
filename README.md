@@ -1,6 +1,6 @@
-# OptinnowApi
+# OptINnow API
 
-API wrapper for OptINnow.
+A Ruby API wrapper for OptINnow.
 
 ## Installation
 
