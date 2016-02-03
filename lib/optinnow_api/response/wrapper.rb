@@ -1,7 +1,7 @@
 module OptINnow
   module Response
     class Wrapper
-      attr_accessor :errors
+      attr_reader :errors, :status, :resource_type
       
       def initialize(resource_type, response)
         @status = response.status
@@ -49,15 +49,15 @@ module OptINnow
       end
       
       def normalize_error_messages(attrs)
-        self.errors = {}
+        @errors = {}
         
         if @status == 404
-          self.errors[@resource_type] = 'not found'
+          @errors[@resource_type] = 'not found'
         elsif @status == 500
-          self.errors['optinnow'] = 'server error'
+          @errors['optinnow'] = 'server error'
         else
           attrs.each do |key, value|
-            self.errors[key] = value
+            @errors[key] = value
           end
         end
       end
