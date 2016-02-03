@@ -5,11 +5,11 @@ require 'optinnow_api/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "optinnow_api"
-  spec.version       = OptinnowApi::VERSION
+  spec.version       = OptINnow::VERSION
   spec.authors       = ["Joe Weber"]
   spec.email         = ["wosephjeber@gmail.com"]
   spec.summary       = %q{API wrapper for OptINnow}
-  spec.description   = %q{Sanely make calls to the OptINnow API}
+  spec.description   = %q{Make calls to the OptINnow API}
   spec.homepage      = ""
   spec.license       = "MIT"
 
