@@ -44,7 +44,7 @@ client.create_donor({
 # and so on and so forth
 ```
 
-An `OptINnow::Response::Wrapper` object will be returned. The response will contain the HTTP status code returned by OptINnow, whether or not the API call was successful, and the resource(s) returned by OptINnow. The resource(s) are available with a class method named after the resource and quantity being requested.
+An `OptINnow::Response::Wrapper` object will be returned. The response will contain the resource type, the HTTP status code returned by OptINnow, whether or not the API call was successful, any error message(s), and the resource(s) returned by OptINnow. The resource(s) are available with a class method named after the resource and quantity being requested.
 
 For example, when dealing with donor records:
 
