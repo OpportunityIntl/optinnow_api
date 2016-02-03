@@ -1,6 +1,7 @@
 require 'optinnow_api/commands/donor'
 require 'optinnow_api/commands/fundraiser'
 require 'optinnow_api/commands/donation'
+require 'optinnow_api/commands/cache'
 require 'optinnow_api/response/wrapper'
 require 'optinnow_api/response/object'
 
